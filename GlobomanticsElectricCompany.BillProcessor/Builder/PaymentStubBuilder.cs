@@ -78,6 +78,34 @@ namespace GlobomanticsElectricCompany.BillProcessor.Builder
 
             builder.Document.FirstSection.Body.FirstParagraph.AppendChild
                 (companyAddressTextbox);
+
+            var customerAddressTextbox = new Shape(builder.Document, ShapeType.TextBox)
+            {
+                RelativeHorizontalPosition = RelativeHorizontalPosition.Margin,
+                RelativeVerticalPosition = RelativeVerticalPosition.Margin,
+                Top = 650,
+                Stroked = false,
+                Width = 180,
+                Height = 80
+            };
+
+            customerAddressTextbox.Left = customerAddressTextbox.Width / 5;
+
+            var customerAddressParagraph = new Paragraph(builder.Document);
+            var customerAddressRun = new Run(builder.Document,
+                HelperMethods.CreateCustomerContactInfoText());
+
+            customerAddressParagraph.AppendChild(customerAddressRun);
+            customerAddressTextbox.AppendChild(customerAddressParagraph);
+
+            foreach (Run run in customerAddressParagraph.Runs)
+            {
+                run.Font.Name = GlobalDocumentSettings.FontName;
+                run.Font.Size = GlobalDocumentSettings.FontSize;
+            }
+
+            builder.Document.FirstSection.Body.FirstParagraph.AppendChild
+                (customerAddressTextbox);
         }
     }
 }
