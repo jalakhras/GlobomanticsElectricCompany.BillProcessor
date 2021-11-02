@@ -10,11 +10,13 @@ namespace GlobomanticsElectricCompany.BillProcessor
             //Initialize document object and document builder object
             var doc = new Document();
             var builder = new DocumentBuilder(doc);
+            builder.Font.Name = GlobalDocumentSettings.FontName;
+            builder.Font.Size = GlobalDocumentSettings.FontSize;
             //Create company contact info
             CompanyContactInfoBuilder.Build(builder);
 
             //Create bill summary table inside a text box
-            BillSummaryTableBuilder.Build();
+            BillSummaryTableBuilder.Build(doc,builder);
 
             //Create bill details table using Document Builder
             BillDetailsTableBuilder.Build();
