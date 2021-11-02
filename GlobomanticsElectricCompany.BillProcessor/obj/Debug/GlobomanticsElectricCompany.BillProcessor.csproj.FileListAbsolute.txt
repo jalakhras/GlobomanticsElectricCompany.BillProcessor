@@ -1,0 +1,6 @@
+C:\Users\Ryan\Desktop\Module 2\demos\Before\GlobomanticsElectricCompany.BillProcessor\GlobomanticsElectricCompany.BillProcessor\bin\Debug\GlobomanticsElectricCompany.BillProcessor.exe.config
+C:\Users\Ryan\Desktop\Module 2\demos\Before\GlobomanticsElectricCompany.BillProcessor\GlobomanticsElectricCompany.BillProcessor\bin\Debug\GlobomanticsElectricCompany.BillProcessor.exe
+C:\Users\Ryan\Desktop\Module 2\demos\Before\GlobomanticsElectricCompany.BillProcessor\GlobomanticsElectricCompany.BillProcessor\bin\Debug\GlobomanticsElectricCompany.BillProcessor.pdb
+C:\Users\Ryan\Desktop\Module 2\demos\Before\GlobomanticsElectricCompany.BillProcessor\GlobomanticsElectricCompany.BillProcessor\obj\Debug\GlobomanticsElectricCompany.BillProcessor.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\Module 2\demos\Before\GlobomanticsElectricCompany.BillProcessor\GlobomanticsElectricCompany.BillProcessor\obj\Debug\GlobomanticsElectricCompany.BillProcessor.exe
+C:\Users\Ryan\Desktop\Module 2\demos\Before\GlobomanticsElectricCompany.BillProcessor\GlobomanticsElectricCompany.BillProcessor\obj\Debug\GlobomanticsElectricCompany.BillProcessor.pdb
