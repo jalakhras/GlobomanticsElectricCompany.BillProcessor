@@ -22,7 +22,7 @@ namespace GlobomanticsElectricCompany.BillProcessor
             BillDetailsTableBuilder.Build(builder);
 
             //Create perforated line for payment stub
-            PaymentStubPerforatedLineBuilder.Build();
+            PaymentStubPerforatedLineBuilder.Build(builder);
 
             //Create payment stub
             PaymentStubBuilder.Build();
