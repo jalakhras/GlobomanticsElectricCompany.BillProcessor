@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using Aspose.Words;
+using System.Drawing;
 
 namespace GlobomanticsElectricCompany.BillProcessor
 {
@@ -12,9 +13,15 @@ namespace GlobomanticsElectricCompany.BillProcessor
         public static string Filename => "E:\\Courses\\Paths\\Aspose.Words for .NET Creating Dynamic Documents\\_Project\\GlobomanticsElectricCompany.BillProcessor\\BillDemo.docx";
 
         //Set page margins
-        public static void SetPageMargins()
+        public static void SetPageMargins(Document doc)
         {
-            
+            foreach (Section section in doc.Sections)
+            {
+                section.PageSetup.TopMargin = 36;
+                section.PageSetup.LeftMargin = 36;
+                section.PageSetup.BottomMargin = 36;
+                section.PageSetup.RightMargin = 36;
+            }
         }
     }
 }

@@ -28,7 +28,7 @@ namespace GlobomanticsElectricCompany.BillProcessor
             PaymentStubBuilder.Build(builder);
 
             //Set global page margins
-            GlobalDocumentSettings.SetPageMargins();
+            GlobalDocumentSettings.SetPageMargins(doc);
 
             //Save document
             doc.Save(GlobalDocumentSettings.Filename);
