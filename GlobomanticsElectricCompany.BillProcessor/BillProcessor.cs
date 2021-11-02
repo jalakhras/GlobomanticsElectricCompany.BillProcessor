@@ -19,7 +19,7 @@ namespace GlobomanticsElectricCompany.BillProcessor
             BillSummaryTableBuilder.Build(doc,builder);
 
             //Create bill details table using Document Builder
-            BillDetailsTableBuilder.Build();
+            BillDetailsTableBuilder.Build(builder);
 
             //Create perforated line for payment stub
             PaymentStubPerforatedLineBuilder.Build();
