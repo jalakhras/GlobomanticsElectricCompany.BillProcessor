@@ -25,7 +25,7 @@ namespace GlobomanticsElectricCompany.BillProcessor
             PaymentStubPerforatedLineBuilder.Build(builder);
 
             //Create payment stub
-            PaymentStubBuilder.Build();
+            PaymentStubBuilder.Build(builder);
 
             //Set global page margins
             GlobalDocumentSettings.SetPageMargins();
