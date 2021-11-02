@@ -9,7 +9,7 @@ namespace GlobomanticsElectricCompany.BillProcessor
         public static int FontSize => 12;
 
         //File information
-        public static string Filename => "C:\\AsposeWordsDemo\\BillDemo.docx";
+        public static string Filename => "E:\\Courses\\Paths\\Aspose.Words for .NET Creating Dynamic Documents\\_Project\\GlobomanticsElectricCompany.BillProcessor\\BillDemo.docx";
 
         //Set page margins
         public static void SetPageMargins()
