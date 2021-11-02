@@ -1,13 +1,14 @@
-﻿using GlobomanticsElectricCompany.BillProcessor.Builder;
+﻿using Aspose.Words;
+using GlobomanticsElectricCompany.BillProcessor.Builder;
 
 namespace GlobomanticsElectricCompany.BillProcessor
 {
     public class BillProcessor
     {
         public static void Main()
-        {            
+        {
             //Initialize document object and document builder object
-            
+            var doc = new Document();
 
             //Create company contact info
             CompanyContactInfoBuilder.Build();
@@ -28,6 +29,7 @@ namespace GlobomanticsElectricCompany.BillProcessor
             GlobalDocumentSettings.SetPageMargins();
 
             //Save document
+            doc.Save(GlobalDocumentSettings.Filename);
 
         }
     }
